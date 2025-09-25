@@ -131,13 +131,13 @@
 
 <style>
 	.hero-section {
-		min-height: 100vh;
+		min-height: 80vh;
 		display: flex;
 		align-items: center;
 		position: relative;
 		overflow: hidden;
 		background: var(--color-white);
-		padding: 0 64px !important;
+		padding: var(--space-16) 32px !important;
 	}
 
 	/* Background Effects - Simplified */
@@ -611,15 +611,78 @@
 		font-size: 0.7rem;
 	}
 
-	@media (max-width: 768px) {
+	@media (max-width: 640px) {
 		.hero-section {
-			padding: 0 48px !important;
+			padding: var(--space-12) 24px !important;
+			min-height: 70vh;
+		}
+
+		.hero-headline {
+			font-size: 1.75rem;
+			line-height: 1.1;
+		}
+
+		.hero-subheadline {
+			font-size: 0.85rem;
+		}
+
+		.hero-subheadline br {
+			display: none;
+		}
+
+		.dashboard-mockup {
+			max-width: 280px;
+			margin-top: var(--space-4);
+		}
+
+		.social-proof {
+			flex-wrap: wrap;
+			gap: var(--space-2);
+		}
+
+		.social-proof-divider {
+			display: none;
+		}
+
+		.hero-ctas {
+			gap: var(--space-3);
+			margin-bottom: var(--space-6);
 		}
 	}
 
 	@media (max-width: 480px) {
 		.hero-section {
-			padding: 0 32px !important;
+			padding: var(--space-10) 20px !important;
+			min-height: 60vh;
+		}
+
+		.hero-headline {
+			font-size: 1.5rem;
+		}
+
+		.hero-subheadline {
+			font-size: 0.8rem;
+		}
+
+		.dashboard-mockup {
+			max-width: 260px;
+		}
+
+		.agent-name {
+			font-size: 0.75rem;
+		}
+
+		.agent-activity {
+			font-size: 0.7rem;
+		}
+
+		.agent-metric {
+			font-size: 0.7rem;
+		}
+
+		.cta-primary, .cta-secondary {
+			padding: var(--space-3) var(--space-5);
+			font-size: 0.9rem;
 		}
 	}
 
