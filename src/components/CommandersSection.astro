@@ -1,0 +1,790 @@
+---
+// CommandersSection.astro - Sección detallada de los 4 Comandantes del ejército
+---
+
+<section id="comandantes" class="commanders-section">
+	<div class="container">
+		<div class="section-header">
+			<div class="section-badge">
+				<span>Tu ejército personal</span>
+			</div>
+			<h2 class="section-title">
+				Conoce a los
+				<span class="title-highlight">4 Comandantes</span>
+				de tu ejército
+			</h2>
+			<p class="section-subtitle">
+				Cada comandante es un especialista élite que domina su área y trabaja sin descanso para hacer crecer tu empresa.
+			</p>
+		</div>
+
+		<div class="commanders-grid">
+			<!-- Comandante Comercial -->
+			<div class="commander-card commercial">
+				<div class="commander-header">
+					<div class="commander-avatar">
+						<div class="avatar-bg commercial-bg">
+						</div>
+						<div class="status-ring">
+							<div class="status-dot active"></div>
+						</div>
+					</div>
+					<div class="commander-info">
+						<h3 class="commander-name">Comandante Comercial</h3>
+						<p class="commander-subtitle">El cazador de oportunidades</p>
+					</div>
+					<div class="commander-metrics">
+						<div class="metric-badge">+340%</div>
+					</div>
+				</div>
+
+				<div class="commander-description">
+					<p>El soldado más letal de tu ejército. Nunca duerme, nunca se rinde, nunca pierde una oportunidad.</p>
+				</div>
+
+				<div class="commander-missions">
+					<h4 class="missions-title">Misiones principales:</h4>
+					<ul class="missions-list">
+						<li class="mission-item">
+							<span>Califica leads automáticamente 24/7</span>
+						</li>
+						<li class="mission-item">
+							<span>Follow-up inteligente y personalizado</span>
+						</li>
+						<li class="mission-item">
+							<span>Programa reuniones en tu calendario</span>
+						</li>
+						<li class="mission-item">
+							<span>Cierra ventas básicas automáticamente</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="commander-results">
+					<div class="result-item">
+						<span class="result-number">300%</span>
+						<span class="result-label">Más leads capturados</span>
+					</div>
+					<div class="result-item">
+						<span class="result-number">24/7</span>
+						<span class="result-label">Disponibilidad</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Comandante de Atención -->
+			<div class="commander-card support">
+				<div class="commander-header">
+					<div class="commander-avatar">
+						<div class="avatar-bg support-bg">
+						</div>
+						<div class="status-ring">
+							<div class="status-dot active"></div>
+						</div>
+					</div>
+					<div class="commander-info">
+						<h3 class="commander-name">Comandante de Atención</h3>
+						<p class="commander-subtitle">El guardián de la satisfacción</p>
+					</div>
+					<div class="commander-metrics">
+						<div class="metric-badge">98% SAT</div>
+					</div>
+				</div>
+
+				<div class="commander-description">
+					<p>Jamás un cliente quedará sin respuesta. Conoce cada detalle de tu empresa y atiende con paciencia infinita.</p>
+				</div>
+
+				<div class="commander-missions">
+					<h4 class="missions-title">Misiones principales:</h4>
+					<ul class="missions-list">
+						<li class="mission-item">
+							<span>Respuesta instantánea multicanal</span>
+						</li>
+						<li class="mission-item">
+							<span>Acceso completo al historial del cliente</span>
+						</li>
+						<li class="mission-item">
+							<span>Escalamiento inteligente a humanos</span>
+						</li>
+						<li class="mission-item">
+							<span>Resolución del 90% de consultas</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="commander-results">
+					<div class="result-item">
+						<span class="result-number">98%</span>
+						<span class="result-label">Satisfacción</span>
+					</div>
+					<div class="result-item">
+						<span class="result-number">&lt;30s</span>
+						<span class="result-label">Tiempo respuesta</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Comandante de Integración -->
+			<div class="commander-card integration">
+				<div class="commander-header">
+					<div class="commander-avatar">
+						<div class="avatar-bg integration-bg">
+						</div>
+						<div class="status-ring">
+							<div class="status-dot active"></div>
+						</div>
+					</div>
+					<div class="commander-info">
+						<h3 class="commander-name">Comandante de Integración</h3>
+						<p class="commander-subtitle">El conector universal</p>
+					</div>
+					<div class="commander-metrics">
+						<div class="metric-badge">0 errores</div>
+					</div>
+				</div>
+
+				<div class="commander-description">
+					<p>Une todos tus sistemas en una sinfonía perfecta. Donde hay caos, él trae orden y sincronización.</p>
+				</div>
+
+				<div class="commander-missions">
+					<h4 class="missions-title">Misiones principales:</h4>
+					<ul class="missions-list">
+						<li class="mission-item">
+							<span>Sincroniza datos entre sistemas</span>
+						</li>
+						<li class="mission-item">
+							<span>Reportes automáticos cross-platform</span>
+						</li>
+						<li class="mission-item">
+							<span>Automatiza workflows complejos</span>
+						</li>
+						<li class="mission-item">
+							<span>Previene errores de transferencia</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="commander-results">
+					<div class="result-item">
+						<span class="result-number">-80%</span>
+						<span class="result-label">Errores manuales</span>
+					</div>
+					<div class="result-item">
+						<span class="result-number">100+</span>
+						<span class="result-label">Integraciones</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Comandante de Procesos -->
+			<div class="commander-card processes">
+				<div class="commander-header">
+					<div class="commander-avatar">
+						<div class="avatar-bg processes-bg">
+						</div>
+						<div class="status-ring">
+							<div class="status-dot active"></div>
+						</div>
+					</div>
+					<div class="commander-info">
+						<h3 class="commander-name">Comandante de Procesos</h3>
+						<p class="commander-subtitle">El eliminador de tareas</p>
+					</div>
+					<div class="commander-metrics">
+						<div class="metric-badge">-60% tiempo</div>
+					</div>
+				</div>
+
+				<div class="commander-description">
+					<p>Odia las tareas repetitivas tanto como tú. Su misión: automatizar todo lo que te quita tiempo valioso.</p>
+				</div>
+
+				<div class="commander-missions">
+					<h4 class="missions-title">Misiones principales:</h4>
+					<ul class="missions-list">
+						<li class="mission-item">
+							<span>Procesa documentos automáticamente</span>
+						</li>
+						<li class="mission-item">
+							<span>Workflows administrativos</span>
+						</li>
+						<li class="mission-item">
+							<span>Reportes y métricas en tiempo real</span>
+						</li>
+						<li class="mission-item">
+							<span>Elimina tareas de 0 valor agregado</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="commander-results">
+					<div class="result-item">
+						<span class="result-number">-60%</span>
+						<span class="result-label">Tiempo admin</span>
+					</div>
+					<div class="result-item">
+						<span class="result-number">∞</span>
+						<span class="result-label">Capacidad</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="army-summary">
+			<div class="summary-content">
+				<h3 class="summary-title">Tu ejército completo trabajando en perfecta sincronía</h3>
+				<p class="summary-description">
+					Mientras tu competencia duerme, tu ejército conquista mercado. Cada comandante se especializa en su área
+					pero comparten información instantáneamente para maximizar resultados.
+				</p>
+				<div class="summary-ctas">
+					<a href="#demo" class="cta-primary">
+						<span>Ver mi ejército en acción</span>
+						<div class="cta-arrow">→</div>
+					</a>
+					<a href="#precios" class="cta-secondary">
+						<span>Ver planes y precios</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.commanders-section {
+		padding: var(--space-32) 64px !important;
+		background: var(--color-white);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.commanders-section::before {
+		display: none;
+	}
+
+	.section-header {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto var(--space-16) auto;
+		opacity: 0;
+		transform: translateY(30px);
+		animation: fadeInUp 0.8s ease-out 0.2s forwards;
+	}
+
+	.section-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-2);
+		background: var(--color-primary);
+		color: var(--color-white);
+		padding: var(--space-2) var(--space-4);
+		border-radius: 6px;
+		font-size: 0.75rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: var(--space-6);
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	}
+
+	.section-title {
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 1.2;
+		color: var(--color-text-primary);
+		margin-bottom: var(--space-4);
+		letter-spacing: -0.01em;
+	}
+
+	.title-highlight {
+		color: var(--color-primary);
+	}
+
+	.section-subtitle {
+		font-size: 1rem;
+		line-height: 1.6;
+		color: var(--color-text-secondary);
+		margin-bottom: var(--space-10);
+	}
+
+	/* Commanders Grid - Mobile First */
+	.commanders-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--space-6);
+		margin-bottom: var(--space-12);
+	}
+
+	.commander-card {
+		background: var(--color-white);
+		border-radius: 12px;
+		padding: var(--space-8);
+		border: 1px solid var(--color-border);
+		position: relative;
+		transition: all 0.5s ease;
+		overflow: hidden;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+		opacity: 0;
+		transform: translateY(60px) scale(0.9);
+		animation: commanderSlideIn 0.8s ease-out forwards;
+	}
+
+	.commander-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		border-radius: 24px 24px 0 0;
+		transition: all 0.3s ease;
+	}
+
+	.commander-card.commercial::before {
+		background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+	}
+
+	.commander-card.support::before {
+		background: linear-gradient(90deg, #10b981, #059669);
+	}
+
+	.commander-card.integration::before {
+		background: linear-gradient(90deg, #8b5cf6, #7c3aed);
+	}
+
+	.commander-card.processes::before {
+		background: linear-gradient(90deg, #f59e0b, #d97706);
+	}
+
+	.commander-card:hover {
+		transform: translateY(-15px) scale(1.03);
+		box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+		border-color: var(--color-primary);
+	}
+
+	.commander-card:hover .avatar-bg {
+		transform: scale(1.1) rotate(5deg);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 25px rgba(59, 130, 246, 0.3);
+	}
+
+	.commander-card:hover .metric-badge {
+		transform: scale(1.1);
+		box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4);
+	}
+
+	.commander-card:hover::before {
+		height: 6px;
+	}
+
+	/* Commander Header */
+	.commander-header {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--space-4);
+		margin-bottom: var(--space-6);
+	}
+
+	.commander-avatar {
+		position: relative;
+		flex-shrink: 0;
+	}
+
+	.avatar-bg {
+		width: 64px;
+		height: 64px;
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		position: relative;
+		transition: all 0.3s ease;
+		animation: avatarGlow 4s ease-in-out infinite;
+	}
+
+	.commercial-bg {
+		background: #3b82f6;
+	}
+
+	.support-bg {
+		background: #10b981;
+	}
+
+	.integration-bg {
+		background: #8b5cf6;
+	}
+
+	.processes-bg {
+		background: #f59e0b;
+	}
+
+
+	.status-ring {
+		position: absolute;
+		bottom: -2px;
+		right: -2px;
+		width: 24px;
+		height: 24px;
+		background: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.status-dot {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background: var(--color-primary);
+		animation: statusPulse 2s ease-in-out infinite;
+		box-shadow: 0 0 0 0 var(--color-primary);
+	}
+
+	@keyframes statusPulse {
+		0% {
+			opacity: 1;
+			transform: scale(1);
+			box-shadow: 0 0 0 0 var(--color-primary);
+		}
+		50% {
+			opacity: 0.8;
+			transform: scale(1.1);
+		}
+		100% {
+			opacity: 0.6;
+			transform: scale(1.3);
+			box-shadow: 0 0 0 6px transparent;
+		}
+	}
+
+	.commander-info {
+		flex: 1;
+	}
+
+	.commander-name {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: #1e293b;
+		margin-bottom: var(--space-1);
+	}
+
+	.commander-subtitle {
+		font-size: 0.9rem;
+		color: #64748b;
+		margin: 0;
+		font-style: italic;
+	}
+
+	.commander-metrics {
+		flex-shrink: 0;
+	}
+
+	.metric-badge {
+		background: var(--color-primary);
+		color: white;
+		padding: var(--space-1) var(--space-3);
+		border-radius: 12px;
+		font-size: 0.8rem;
+		font-weight: 600;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease;
+		animation: metricPulse 3s ease-in-out infinite;
+	}
+
+	/* Commander Description */
+	.commander-description {
+		margin-bottom: var(--space-6);
+	}
+
+	.commander-description p {
+		color: #475569;
+		line-height: 1.6;
+		font-size: 0.95rem;
+		margin: 0;
+	}
+
+	/* Missions */
+	.missions-title {
+		font-size: 1rem;
+		font-weight: 600;
+		color: #1e293b;
+		margin-bottom: var(--space-4);
+	}
+
+	.missions-list {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 var(--space-6) 0;
+	}
+
+	.mission-item {
+		padding: var(--space-2) 0;
+		font-size: 0.9rem;
+		color: #475569;
+		border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+	}
+
+	.mission-item:last-child {
+		border-bottom: none;
+	}
+
+
+	/* Commander Results */
+	.commander-results {
+		display: flex;
+		gap: var(--space-6);
+	}
+
+	.result-item {
+		text-align: center;
+		flex: 1;
+	}
+
+	.result-number {
+		display: block;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--color-primary);
+		line-height: 1;
+		margin-bottom: var(--space-1);
+	}
+
+	.result-label {
+		font-size: 0.75rem;
+		color: #64748b;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	/* Army Summary */
+	.army-summary {
+		background: var(--color-bg-secondary);
+		border: 1px solid var(--color-border);
+		border-radius: 12px;
+		padding: var(--space-10);
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	}
+
+	.army-summary::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.3), transparent);
+	}
+
+	.summary-title {
+		font-size: 2rem;
+		font-weight: 600;
+		color: #1e293b;
+		margin-bottom: var(--space-4);
+		line-height: 1.3;
+	}
+
+	.summary-description {
+		font-size: 1.125rem;
+		line-height: 1.6;
+		color: #475569;
+		margin-bottom: var(--space-8);
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.summary-ctas {
+		display: flex;
+		justify-content: center;
+		gap: var(--space-4);
+		align-items: center;
+	}
+
+	.cta-primary {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-2);
+		background: var(--color-primary);
+		color: white;
+		padding: var(--space-4) var(--space-6);
+		border-radius: 8px;
+		font-weight: 600;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.cta-primary::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+		transition: left 0.5s;
+	}
+
+	.cta-primary:hover::before {
+		left: 100%;
+	}
+
+	.cta-primary:hover {
+		background: var(--color-primary-hover);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.cta-arrow {
+		transition: transform 0.3s ease;
+	}
+
+	.cta-primary:hover .cta-arrow {
+		transform: translateX(4px);
+	}
+
+	.cta-secondary {
+		display: inline-flex;
+		align-items: center;
+		color: #475569;
+		padding: var(--space-4) var(--space-6);
+		border-radius: 12px;
+		font-weight: 600;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		border: 1px solid #e2e8f0;
+		background: rgba(255, 255, 255, 0.7);
+		backdrop-filter: blur(10px);
+	}
+
+	.cta-secondary:hover {
+		background: white;
+		border-color: #cbd5e1;
+		transform: translateY(-1px);
+		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	}
+
+	.summary-ctas {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-4);
+		align-items: center;
+	}
+
+	/* Desktop Styles */
+	@media (max-width: 768px) {
+		.commanders-section {
+			padding: var(--space-32) 48px !important;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.commanders-section {
+			padding: var(--space-32) 32px !important;
+		}
+	}
+
+	@media (min-width: 640px) {
+		.commanders-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 768px) {
+		.section-title {
+			font-size: 2.5rem;
+		}
+
+		.section-subtitle {
+			font-size: 1.125rem;
+			margin-bottom: var(--space-12);
+		}
+
+		.commanders-grid {
+			gap: var(--space-8);
+			margin-bottom: var(--space-16);
+		}
+
+		.commander-card {
+			padding: var(--space-8);
+		}
+
+		.summary-title {
+			font-size: 2rem;
+		}
+
+		.summary-ctas {
+			flex-direction: row;
+			justify-content: center;
+			gap: var(--space-4);
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.section-title {
+			font-size: 3rem;
+		}
+
+		.commanders-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	/* Animation delays for commander cards */
+	.commander-card:nth-child(1) { animation-delay: 0.1s; }
+	.commander-card:nth-child(2) { animation-delay: 0.3s; }
+	.commander-card:nth-child(3) { animation-delay: 0.5s; }
+	.commander-card:nth-child(4) { animation-delay: 0.7s; }
+
+	@keyframes fadeInUp {
+		from {
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes commanderSlideIn {
+		from {
+			opacity: 0;
+			transform: translateY(60px) scale(0.9);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0) scale(1);
+		}
+	}
+
+	@keyframes avatarGlow {
+		0%, 100% {
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+		50% {
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 20px rgba(59, 130, 246, 0.2);
+		}
+	}
+
+	@keyframes metricPulse {
+		0%, 100% {
+			transform: scale(1);
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+		}
+		50% {
+			transform: scale(1.05);
+			box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);
+		}
+	}
+</style>

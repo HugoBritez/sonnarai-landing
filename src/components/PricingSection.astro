@@ -1,0 +1,509 @@
+---
+// PricingSection.astro - Sección de precios de SonarAI
+---
+
+<section id="precios" class="pricing-section">
+	<div class="container">
+		<div class="section-header">
+			<div class="section-badge">
+				<span>Planes y Precios</span>
+			</div>
+			<h2 class="section-title">
+				Elige el tamaño de tu
+				<span class="title-highlight">ejército</span>
+			</h2>
+			<p class="section-subtitle">
+				Desde agentes especializados hasta ejércitos completos. Sin contratos largos, sin costos ocultos.
+			</p>
+		</div>
+
+		<div class="pricing-grid">
+			<!-- Plan Básico -->
+			<div class="pricing-card starter">
+				<div class="card-header">
+					<div class="plan-name">SONAR Básico</div>
+					<div class="plan-description">Perfecto para comenzar con WhatsApp</div>
+				</div>
+
+				<div class="card-pricing">
+					<div class="price">
+						<span class="currency">$</span>
+						<span class="amount">50</span>
+						<span class="period">/mes</span>
+					</div>
+					<div class="price-note">Ideal para emprendedores</div>
+				</div>
+
+				<div class="card-features">
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Solo WhatsApp</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>1 usuario</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Hasta 1,000 mensajes/mes</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Reportes básicos</span>
+					</div>
+				</div>
+
+				<div class="card-cta">
+					<a href="#contacto" class="cta-button starter-cta">Empezar ahora</a>
+					<div class="guarantee">30 días de garantía</div>
+				</div>
+			</div>
+
+			<!-- Plan Pro (Popular) -->
+			<div class="pricing-card business popular">
+				<div class="popular-badge">Más Popular</div>
+
+				<div class="card-header">
+					<div class="plan-name">SONAR Pro</div>
+					<div class="plan-description">La solución completa para empresas en crecimiento</div>
+				</div>
+
+				<div class="card-pricing">
+					<div class="price">
+						<span class="currency">$</span>
+						<span class="amount">120</span>
+						<span class="period">/mes</span>
+					</div>
+					<div class="price-note">Perfecto para PyMEs</div>
+				</div>
+
+				<div class="card-features">
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>WhatsApp + App nativa</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>3 usuarios</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Mensajes ilimitados</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Dashboards completos</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Integraciones básicas</span>
+					</div>
+				</div>
+
+				<div class="card-cta">
+					<a href="#contacto" class="cta-button business-cta">Comenzar Pro</a>
+					<div class="guarantee">ROI garantizado</div>
+				</div>
+			</div>
+
+			<!-- Plan Enterprise -->
+			<div class="pricing-card enterprise">
+				<div class="card-header">
+					<div class="plan-name">SONAR Enterprise</div>
+					<div class="plan-description">Todo incluido + personalización para empresas grandes</div>
+				</div>
+
+				<div class="card-pricing">
+					<div class="price">
+						<span class="currency">$</span>
+						<span class="amount">250</span>
+						<span class="period">/mes</span>
+					</div>
+					<div class="price-note">Solución empresarial completa</div>
+				</div>
+
+				<div class="card-features">
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Todo incluido + personalización</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Usuarios ilimitados</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Integraciones avanzadas</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Soporte dedicado 24/7</span>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<span>Personalización completa</span>
+					</div>
+				</div>
+
+				<div class="card-cta">
+					<a href="#contacto" class="cta-button enterprise-cta">Comenzar Enterprise</a>
+					<div class="guarantee">Consultoría gratuita incluida</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pricing-footer">
+			<div class="guarantee-section">
+				<h3>¿No estás seguro? Prueba sin riesgo</h3>
+				<p>Todos nuestros planes incluyen 30 días de garantía de devolución completa. Si no ves resultados, te devolvemos tu dinero.</p>
+				<div class="guarantee-features">
+					<div class="guarantee-item">
+						<div class="guarantee-icon">🛡️</div>
+						<span>30 días de garantía</span>
+					</div>
+					<div class="guarantee-item">
+						<div class="guarantee-icon">⚡</div>
+						<span>Setup gratuito</span>
+					</div>
+					<div class="guarantee-item">
+						<div class="guarantee-icon">📞</div>
+						<span>Soporte incluido</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.pricing-section {
+		padding: var(--space-32) 64px !important;
+		background: var(--color-bg-secondary);
+		position: relative;
+		overflow: hidden;
+	}
+
+	@media (max-width: 768px) {
+		.pricing-section {
+			padding: var(--space-32) 48px !important;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.pricing-section {
+			padding: var(--space-32) 32px !important;
+		}
+	}
+
+	.section-header {
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto var(--space-12) auto;
+	}
+
+	.section-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-2);
+		background: var(--color-primary);
+		color: var(--color-white);
+		padding: var(--space-2) var(--space-4);
+		border-radius: 6px;
+		font-size: 0.75rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: var(--space-6);
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	}
+
+	.section-title {
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 1.2;
+		color: var(--color-text-primary);
+		margin-bottom: var(--space-4);
+		letter-spacing: -0.01em;
+	}
+
+	.title-highlight {
+		color: var(--color-primary);
+	}
+
+	.section-subtitle {
+		font-size: 1rem;
+		line-height: 1.6;
+		color: var(--color-text-secondary);
+		margin-bottom: var(--space-10);
+	}
+
+	/* Pricing Grid */
+	.pricing-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--space-6);
+		margin-bottom: var(--space-16);
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.pricing-card {
+		background: var(--color-white);
+		border-radius: 12px;
+		padding: var(--space-6);
+		border: 1px solid var(--color-border);
+		position: relative;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	.pricing-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+	}
+
+	.pricing-card.popular {
+		border-color: var(--color-primary);
+		box-shadow: 0 4px 12px rgba(2, 132, 199, 0.15);
+	}
+
+	.popular-badge {
+		position: absolute;
+		top: -10px;
+		left: 50%;
+		transform: translateX(-50%);
+		background: var(--color-primary);
+		color: white;
+		padding: 4px 12px;
+		border-radius: 12px;
+		font-size: 0.7rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	/* Card Header */
+	.card-header {
+		text-align: center;
+		margin-bottom: var(--space-4);
+	}
+
+	.plan-name {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--color-text-primary);
+		margin-bottom: var(--space-2);
+	}
+
+	.plan-description {
+		font-size: 0.85rem;
+		color: var(--color-text-secondary);
+		line-height: 1.4;
+	}
+
+	/* Card Pricing */
+	.card-pricing {
+		text-align: center;
+		margin-bottom: var(--space-6);
+		padding: var(--space-4) 0;
+		border-top: 1px solid var(--color-border-light);
+		border-bottom: 1px solid var(--color-border-light);
+	}
+
+	.price {
+		display: flex;
+		align-items: baseline;
+		justify-content: center;
+		gap: 4px;
+		margin-bottom: var(--space-2);
+	}
+
+	.currency {
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--color-text-secondary);
+	}
+
+	.amount {
+		font-size: 2.5rem;
+		font-weight: 700;
+		color: var(--color-primary);
+		line-height: 1;
+	}
+
+	.period {
+		font-size: 0.9rem;
+		color: var(--color-text-secondary);
+	}
+
+	.custom-price .amount {
+		font-size: 1.25rem;
+	}
+
+	.price-note {
+		font-size: 0.8rem;
+		color: var(--color-text-muted);
+	}
+
+	/* Features */
+	.card-features {
+		margin-bottom: var(--space-6);
+	}
+
+	.feature-item {
+		display: flex;
+		align-items: center;
+		gap: var(--space-2);
+		padding: var(--space-1) 0;
+		font-size: 0.9rem;
+		color: var(--color-text-secondary);
+	}
+
+	.feature-icon {
+		width: 16px;
+		height: 16px;
+		background: var(--color-primary);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 0.6rem;
+		font-weight: 600;
+		flex-shrink: 0;
+	}
+
+	/* CTA */
+	.card-cta {
+		text-align: center;
+		padding: 0 4px;
+	}
+
+	.cta-button {
+		display: inline-block;
+		width: calc(100% - 8px);
+		max-width: 100%;
+		padding: 12px 16px;
+		border-radius: 6px;
+		font-weight: 600;
+		font-size: 0.9rem;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		margin-bottom: var(--space-2);
+		box-sizing: border-box;
+		text-align: center;
+	}
+
+	.starter-cta {
+		background: var(--color-white);
+		color: var(--color-primary);
+		border: 2px solid var(--color-primary);
+	}
+
+	.starter-cta:hover {
+		background: var(--color-primary);
+		color: white;
+	}
+
+	.business-cta {
+		background: var(--color-primary);
+		color: white;
+		box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+	}
+
+	.business-cta:hover {
+		background: var(--color-primary-hover);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
+	}
+
+	.enterprise-cta {
+		background: var(--color-slate-900);
+		color: white;
+	}
+
+	.enterprise-cta:hover {
+		background: var(--color-slate-800);
+		transform: translateY(-2px);
+	}
+
+	.guarantee {
+		font-size: 0.8rem;
+		color: var(--color-text-muted);
+	}
+
+	/* Pricing Footer */
+	.pricing-footer {
+		text-align: center;
+	}
+
+	.guarantee-section {
+		background: var(--color-white);
+		padding: var(--space-8);
+		border-radius: 16px;
+		border: 1px solid var(--color-border);
+	}
+
+	.guarantee-section h3 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: var(--color-text-primary);
+		margin-bottom: var(--space-4);
+	}
+
+	.guarantee-section p {
+		color: var(--color-text-secondary);
+		margin-bottom: var(--space-6);
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.guarantee-features {
+		display: flex;
+		justify-content: center;
+		gap: var(--space-8);
+		flex-wrap: wrap;
+	}
+
+	.guarantee-item {
+		display: flex;
+		align-items: center;
+		gap: var(--space-2);
+		font-size: 0.9rem;
+		color: var(--color-text-secondary);
+	}
+
+	.guarantee-icon {
+		font-size: 1.2rem;
+	}
+
+	/* Responsive */
+	@media (min-width: 768px) {
+		.section-title {
+			font-size: 2.5rem;
+		}
+
+		.section-subtitle {
+			font-size: 1.125rem;
+		}
+
+		.pricing-grid {
+			grid-template-columns: repeat(3, 1fr);
+			gap: var(--space-4);
+		}
+
+		.guarantee-features {
+			gap: var(--space-8);
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.section-title {
+			font-size: 3rem;
+		}
+	}
+</style>
