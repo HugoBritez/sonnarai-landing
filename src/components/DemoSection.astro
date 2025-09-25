@@ -1,0 +1,598 @@
+---
+// DemoSection.astro - Sección de demo y llamada a la acción con WhatsApp
+---
+
+<section class="demo-section">
+	<div class="container">
+		<div class="section-header">
+			<div class="section-badge">
+				<span>Prueba gratuita</span>
+			</div>
+			<h2 class="section-title">
+				Ve tu agente SONAR en
+				<span class="title-highlight">acción ahora mismo</span>
+			</h2>
+			<p class="section-subtitle">
+				Chatea con nuestro agente demo y descubre el poder de tener empleados que nunca duermen
+			</p>
+		</div>
+
+		<div class="demo-content">
+			<div class="demo-phone">
+				<div class="phone-frame">
+					<div class="phone-screen">
+						<div class="whatsapp-header">
+							<div class="contact-info">
+								<div class="contact-avatar">
+									<div class="avatar-bg">S</div>
+								</div>
+								<div class="contact-details">
+									<div class="contact-name">SONAR Demo</div>
+									<div class="contact-status">en línea</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="chat-messages">
+							<div class="message received">
+								<div class="message-bubble">
+									<p>¡Hola! Soy tu agente SONAR</p>
+									<p>Estoy aquí 24/7 para ayudar a tu empresa. ¿En qué te puedo ayudar hoy?</p>
+									<div class="message-time">14:32</div>
+								</div>
+							</div>
+
+							<div class="message sent">
+								<div class="message-bubble">
+									<p>Quiero información sobre sus servicios</p>
+									<div class="message-time">14:33</div>
+								</div>
+							</div>
+
+							<div class="message received">
+								<div class="message-bubble">
+									<p>Perfecto, te ayudo con eso inmediatamente.</p>
+									<p>Ofrecemos agentes especializados en ventas, atención al cliente y automatización de procesos.</p>
+									<p>¿Cuál es tu área de interés principal?</p>
+									<div class="message-time">14:33</div>
+								</div>
+							</div>
+
+							<div class="typing-indicator">
+								<div class="typing-dots">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<span class="typing-text">SONAR está escribiendo...</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="demo-features">
+				<div class="feature-list">
+					<div class="feature-item">
+						<div class="feature-icon"></div>
+						<div class="feature-content">
+							<h4>Respuesta instantánea</h4>
+							<p>Sin esperas, sin demoras. Respuesta inmediata las 24 horas.</p>
+						</div>
+					</div>
+
+					<div class="feature-item">
+						<div class="feature-icon"></div>
+						<div class="feature-content">
+							<h4>Conoce tu negocio</h4>
+							<p>Entrenado específicamente con la información de tu empresa.</p>
+						</div>
+					</div>
+
+					<div class="feature-item">
+						<div class="feature-icon"></div>
+						<div class="feature-content">
+							<h4>Mejora continuamente</h4>
+							<p>Aprende de cada conversación para ser más efectivo.</p>
+						</div>
+					</div>
+
+					<div class="feature-item">
+						<div class="feature-icon"></div>
+						<div class="feature-content">
+							<h4>Reportes detallados</h4>
+							<p>Métricas completas de rendimiento y conversaciones.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cta-section">
+			<div class="cta-card">
+				<div class="cta-content">
+					<h3 class="cta-title">¿Listo para tu ejército?</h3>
+					<p class="cta-description">
+						Comienza con una consulta gratuita. Te mostramos exactamente cómo SONAR
+						puede transformar tu empresa en 30 días.
+					</p>
+					<div class="cta-benefits">
+						<div class="benefit-check">✓ Consultoría gratuita de 30 minutos</div>
+						<div class="benefit-check">✓ Análisis personalizado de tu empresa</div>
+						<div class="benefit-check">✓ Demo en vivo con tus datos reales</div>
+						<div class="benefit-check">✓ Plan de implementación detallado</div>
+					</div>
+					<div class="cta-buttons">
+						<a href="https://wa.me/595981234567?text=Hola,%20quiero%20información%20sobre%20agentes%20SONAR%20para%20mi%20empresa"
+						   class="cta-button primary-cta"
+						   target="_blank">
+							<span class="button-icon"></span>
+							<span>Hablar por WhatsApp</span>
+						</a>
+						<a href="mailto:contacto@sonarai.com?subject=Consulta%20sobre%20agentes%20SONAR"
+						   class="cta-button secondary-cta">
+							<span class="button-icon"></span>
+							<span>Enviar email</span>
+						</a>
+					</div>
+					<div class="cta-guarantee">
+						<span class="guarantee-icon"></span>
+						<span>Sin compromiso • Consulta 100% gratuita</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<style>
+	.demo-section {
+		padding: var(--space-32) 64px !important;
+		background: var(--color-bg-secondary);
+		position: relative;
+		overflow: hidden;
+	}
+
+	@media (max-width: 768px) {
+		.demo-section {
+			padding: var(--space-32) 48px !important;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.demo-section {
+			padding: var(--space-32) 32px !important;
+		}
+	}
+
+	.section-header {
+		text-align: center;
+		max-width: 700px;
+		margin: 0 auto var(--space-12) auto;
+	}
+
+	.section-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: var(--space-2);
+		background: #22c55e;
+		color: var(--color-white);
+		padding: var(--space-2) var(--space-4);
+		border-radius: 6px;
+		font-size: 0.75rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: var(--space-6);
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	}
+
+	.section-title {
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 1.2;
+		color: var(--color-text-primary);
+		margin-bottom: var(--space-4);
+		letter-spacing: -0.01em;
+	}
+
+	.title-highlight {
+		color: var(--color-primary);
+	}
+
+	.section-subtitle {
+		font-size: 1rem;
+		line-height: 1.6;
+		color: var(--color-text-secondary);
+		margin-bottom: var(--space-10);
+	}
+
+	/* Demo Content */
+	.demo-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--space-8);
+		margin-bottom: var(--space-16);
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Phone Demo */
+	.demo-phone {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.phone-frame {
+		width: 280px;
+		height: 500px;
+		background: #000;
+		border-radius: 25px;
+		padding: 8px;
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+		position: relative;
+	}
+
+	.phone-screen {
+		width: 100%;
+		height: 100%;
+		background: #f0f0f0;
+		border-radius: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.whatsapp-header {
+		background: #075e54;
+		padding: var(--space-3) var(--space-4);
+		color: white;
+	}
+
+	.contact-info {
+		display: flex;
+		align-items: center;
+		gap: var(--space-3);
+	}
+
+	.contact-avatar {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: var(--color-primary);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.avatar-bg {
+		color: white;
+		font-weight: 600;
+		font-size: 1rem;
+	}
+
+	.contact-name {
+		font-weight: 600;
+		font-size: 0.9rem;
+	}
+
+	.contact-status {
+		font-size: 0.75rem;
+		opacity: 0.8;
+	}
+
+	.chat-messages {
+		flex: 1;
+		padding: var(--space-4);
+		background: #e5ddd5;
+		overflow-y: auto;
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+	}
+
+	.message {
+		display: flex;
+		margin-bottom: var(--space-2);
+	}
+
+	.message.received {
+		justify-content: flex-start;
+	}
+
+	.message.sent {
+		justify-content: flex-end;
+	}
+
+	.message-bubble {
+		max-width: 200px;
+		padding: var(--space-2) var(--space-3);
+		border-radius: 12px;
+		font-size: 0.85rem;
+		line-height: 1.4;
+		position: relative;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	}
+
+	.message.received .message-bubble {
+		background: white;
+		border-bottom-left-radius: 4px;
+	}
+
+	.message.sent .message-bubble {
+		background: #dcf8c6;
+		border-bottom-right-radius: 4px;
+	}
+
+	.message-bubble p {
+		margin: 0 0 var(--space-1) 0;
+		color: #303030;
+	}
+
+	.message-bubble p:last-of-type {
+		margin-bottom: var(--space-2);
+	}
+
+	.message-time {
+		font-size: 0.7rem;
+		color: #999;
+		text-align: right;
+	}
+
+	.typing-indicator {
+		display: flex;
+		align-items: center;
+		gap: var(--space-2);
+		padding: var(--space-2);
+		background: white;
+		border-radius: 12px;
+		width: fit-content;
+		margin-top: var(--space-2);
+	}
+
+	.typing-dots {
+		display: flex;
+		gap: 2px;
+	}
+
+	.typing-dots span {
+		width: 6px;
+		height: 6px;
+		background: #999;
+		border-radius: 50%;
+		animation: typingDots 1.4s ease-in-out infinite;
+	}
+
+	.typing-dots span:nth-child(2) {
+		animation-delay: 0.2s;
+	}
+
+	.typing-dots span:nth-child(3) {
+		animation-delay: 0.4s;
+	}
+
+	.typing-text {
+		font-size: 0.75rem;
+		color: #999;
+	}
+
+	@keyframes typingDots {
+		0%, 60%, 100% {
+			transform: translateY(0);
+			opacity: 0.5;
+		}
+		30% {
+			transform: translateY(-10px);
+			opacity: 1;
+		}
+	}
+
+	/* Feature List */
+	.feature-list {
+		display: grid;
+		gap: var(--space-4);
+	}
+
+	.feature-item {
+		display: flex;
+		align-items: flex-start;
+		gap: var(--space-4);
+		background: var(--color-white);
+		padding: var(--space-5);
+		border-radius: 12px;
+		border: 1px solid var(--color-border);
+		transition: all 0.3s ease;
+	}
+
+	.feature-item:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	}
+
+	.feature-icon {
+		font-size: 1.5rem;
+		flex-shrink: 0;
+		width: 48px;
+		height: 48px;
+		background: var(--color-primary);
+		border-radius: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	.feature-icon::before {
+		content: '';
+		width: 20px;
+		height: 20px;
+		background: white;
+		border-radius: 2px;
+	}
+
+	.feature-content h4 {
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--color-text-primary);
+		margin: 0 0 var(--space-2) 0;
+	}
+
+	.feature-content p {
+		font-size: 0.9rem;
+		color: var(--color-text-secondary);
+		margin: 0;
+		line-height: 1.5;
+	}
+
+	/* CTA Section */
+	.cta-section {
+		display: flex;
+		justify-content: center;
+	}
+
+	.cta-card {
+		background: var(--color-white);
+		border-radius: 16px;
+		padding: var(--space-8);
+		border: 1px solid var(--color-border);
+		max-width: 600px;
+		width: 100%;
+		text-align: center;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.cta-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		background: var(--color-primary);
+	}
+
+	.cta-title {
+		font-size: 1.75rem;
+		font-weight: 700;
+		color: var(--color-text-primary);
+		margin-bottom: var(--space-4);
+	}
+
+	.cta-description {
+		font-size: 1rem;
+		color: var(--color-text-secondary);
+		margin-bottom: var(--space-6);
+		line-height: 1.6;
+	}
+
+	.cta-benefits {
+		display: grid;
+		gap: var(--space-3);
+		margin-bottom: var(--space-6);
+		text-align: left;
+	}
+
+	.benefit-check {
+		display: flex;
+		align-items: center;
+		gap: var(--space-2);
+		font-size: 0.9rem;
+		color: var(--color-text-secondary);
+	}
+
+	.cta-buttons {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3);
+		margin-bottom: var(--space-4);
+	}
+
+	.cta-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--space-2);
+		padding: var(--space-4) var(--space-6);
+		border-radius: 8px;
+		font-weight: 600;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		font-size: 1rem;
+	}
+
+	.primary-cta {
+		background: #25d366;
+		color: white;
+		box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+	}
+
+	.primary-cta:hover {
+		background: #22c55e;
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+	}
+
+	.secondary-cta {
+		background: var(--color-white);
+		color: var(--color-text-primary);
+		border: 2px solid var(--color-border);
+	}
+
+	.secondary-cta:hover {
+		background: var(--color-bg-secondary);
+		transform: translateY(-1px);
+	}
+
+	.button-icon {
+		font-size: 1.1rem;
+	}
+
+	.cta-guarantee {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--space-2);
+		font-size: 0.85rem;
+		color: var(--color-text-muted);
+		padding-top: var(--space-4);
+		border-top: 1px solid var(--color-border-light);
+	}
+
+	.guarantee-icon {
+		font-size: 1rem;
+	}
+
+	/* Responsive */
+	@media (min-width: 768px) {
+		.section-title {
+			font-size: 2.5rem;
+		}
+
+		.section-subtitle {
+			font-size: 1.125rem;
+		}
+
+		.demo-content {
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+		}
+
+		.cta-buttons {
+			flex-direction: row;
+		}
+
+		.cta-benefits {
+			text-align: center;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.section-title {
+			font-size: 3rem;
+		}
+	}
+</style>

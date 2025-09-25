@@ -1,0 +1,424 @@
+---
+// Footer.astro - Footer de SonarAI con información de contacto y links
+---
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer-content">
+			<div class="footer-main">
+				<div class="footer-brand">
+					<div class="brand-logo">
+						<div class="logo-icon">SONAR</div>
+						<span class="logo-text">AI</span>
+					</div>
+					<p class="brand-tagline">
+						Tu ejército de empleados virtuales que nunca duerme.
+						Automatización inteligente para PyMEs paraguayas.
+					</p>
+					<div class="brand-contact">
+						<div class="contact-item">
+							<span class="contact-icon"></span>
+							<span>Asunción, Paraguay</span>
+						</div>
+						<div class="contact-item">
+							<span class="contact-icon"></span>
+							<a href="https://wa.me/595981234567" target="_blank">+595 98 123-4567</a>
+						</div>
+						<div class="contact-item">
+							<span class="contact-icon"></span>
+							<a href="mailto:contacto@sonarai.com">contacto@sonarai.com</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer-links">
+					<div class="link-column">
+						<h4 class="column-title">Servicios</h4>
+						<ul class="link-list">
+							<li><a href="#agentes-ventas">Agentes de Ventas</a></li>
+							<li><a href="#atencion-cliente">Atención al Cliente</a></li>
+							<li><a href="#automatizacion">Automatización</a></li>
+							<li><a href="#integraciones">Integraciones</a></li>
+						</ul>
+					</div>
+
+					<div class="link-column">
+						<h4 class="column-title">Empresa</h4>
+						<ul class="link-list">
+							<li><a href="#nosotros">Sobre Nosotros</a></li>
+							<li><a href="#casos-exito">Casos de Éxito</a></li>
+							<li><a href="#blog">Blog</a></li>
+							<li><a href="#carreras">Carreras</a></li>
+						</ul>
+					</div>
+
+					<div class="link-column">
+						<h4 class="column-title">Soporte</h4>
+						<ul class="link-list">
+							<li><a href="#ayuda">Centro de Ayuda</a></li>
+							<li><a href="#documentacion">Documentación</a></li>
+							<li><a href="#contacto">Contacto</a></li>
+							<li><a href="#estado">Estado del Sistema</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-cta">
+					<div class="cta-content">
+						<h4 class="cta-title">¿Listo para automatizar?</h4>
+						<p class="cta-description">
+							Comienza con una consulta gratuita y ve cómo SONAR puede transformar tu empresa.
+						</p>
+						<div class="cta-buttons">
+							<a href="https://wa.me/595981234567?text=Quiero%20información%20sobre%20agentes%20SONAR"
+							   class="cta-button primary"
+							   target="_blank">
+								<span class="button-icon"></span>
+								<span>WhatsApp</span>
+							</a>
+							<a href="mailto:contacto@sonarai.com?subject=Consulta%20sobre%20automatización"
+							   class="cta-button secondary">
+								<span class="button-icon"></span>
+								<span>Email</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="footer-legal">
+				<div class="legal-links">
+					<a href="#privacidad">Política de Privacidad</a>
+					<a href="#terminos">Términos de Servicio</a>
+					<a href="#cookies">Política de Cookies</a>
+				</div>
+				<div class="copyright">
+					<p>&copy; 2024 SonarAI. Todos los derechos reservados.</p>
+				</div>
+			</div>
+
+			<div class="footer-social">
+				<div class="social-links">
+					<a href="#linkedin" class="social-link" title="LinkedIn">
+						<span class="social-icon"></span>
+					</a>
+					<a href="#twitter" class="social-link" title="Twitter">
+						<span class="social-icon"></span>
+					</a>
+					<a href="#instagram" class="social-link" title="Instagram">
+						<span class="social-icon"></span>
+					</a>
+					<a href="#youtube" class="social-link" title="YouTube">
+						<span class="social-icon"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<style>
+	.footer {
+		background: var(--color-slate-900);
+		color: var(--color-slate-300);
+		padding: var(--space-16) 64px var(--space-8) 64px;
+	}
+
+	@media (max-width: 768px) {
+		.footer {
+			padding: var(--space-16) 48px var(--space-8) 48px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.footer {
+			padding: var(--space-16) 32px var(--space-8) 32px;
+		}
+	}
+
+	.footer-content {
+		margin-bottom: var(--space-12);
+	}
+
+	.footer-main {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--space-8);
+		margin-bottom: var(--space-12);
+	}
+
+	/* Brand Section */
+	.footer-brand {
+		max-width: 400px;
+	}
+
+	.brand-logo {
+		display: flex;
+		align-items: center;
+		gap: var(--space-2);
+		margin-bottom: var(--space-4);
+	}
+
+	.logo-icon {
+		background: var(--color-primary);
+		color: white;
+		padding: var(--space-2) var(--space-3);
+		border-radius: 8px;
+		font-weight: 700;
+		font-size: 1rem;
+		letter-spacing: -0.02em;
+	}
+
+	.logo-text {
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: var(--color-white);
+	}
+
+	.brand-tagline {
+		color: var(--color-slate-400);
+		line-height: 1.6;
+		margin-bottom: var(--space-6);
+		font-size: 0.95rem;
+	}
+
+	.brand-contact {
+		display: grid;
+		gap: var(--space-3);
+	}
+
+	.contact-item {
+		display: flex;
+		align-items: center;
+		gap: var(--space-2);
+		font-size: 0.9rem;
+	}
+
+	.contact-icon {
+		font-size: 1rem;
+		width: 20px;
+		text-align: center;
+	}
+
+	.contact-item a {
+		color: var(--color-slate-300);
+		text-decoration: none;
+		transition: color 0.3s ease;
+	}
+
+	.contact-item a:hover {
+		color: var(--color-primary);
+	}
+
+	/* Link Columns */
+	.footer-links {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: var(--space-8);
+	}
+
+	.column-title {
+		color: var(--color-white);
+		font-size: 1rem;
+		font-weight: 600;
+		margin-bottom: var(--space-4);
+	}
+
+	.link-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: var(--space-3);
+	}
+
+	.link-list a {
+		color: var(--color-slate-400);
+		text-decoration: none;
+		font-size: 0.9rem;
+		transition: color 0.3s ease;
+		display: block;
+	}
+
+	.link-list a:hover {
+		color: var(--color-primary);
+	}
+
+	/* Footer CTA */
+	.footer-cta {
+		background: var(--color-slate-800);
+		border: 1px solid var(--color-slate-700);
+		border-radius: 12px;
+		padding: var(--space-6);
+		text-align: center;
+	}
+
+	.cta-title {
+		color: var(--color-white);
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: var(--space-3);
+	}
+
+	.cta-description {
+		color: var(--color-slate-400);
+		margin-bottom: var(--space-5);
+		line-height: 1.5;
+		font-size: 0.95rem;
+	}
+
+	.cta-buttons {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-3);
+	}
+
+	.cta-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		gap: var(--space-2);
+		padding: var(--space-3) var(--space-5);
+		border-radius: 8px;
+		font-weight: 600;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		font-size: 0.9rem;
+	}
+
+	.cta-button.primary {
+		background: #25d366;
+		color: white;
+	}
+
+	.cta-button.primary:hover {
+		background: #22c55e;
+		transform: translateY(-1px);
+	}
+
+	.cta-button.secondary {
+		background: transparent;
+		color: var(--color-slate-300);
+		border: 1px solid var(--color-slate-600);
+	}
+
+	.cta-button.secondary:hover {
+		background: var(--color-slate-700);
+		border-color: var(--color-slate-500);
+	}
+
+	/* Footer Bottom */
+	.footer-bottom {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: var(--space-6);
+		padding-top: var(--space-8);
+		border-top: 1px solid var(--color-slate-800);
+	}
+
+	.footer-legal {
+		display: grid;
+		gap: var(--space-4);
+	}
+
+	.legal-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--space-4);
+	}
+
+	.legal-links a {
+		color: var(--color-slate-500);
+		text-decoration: none;
+		font-size: 0.85rem;
+		transition: color 0.3s ease;
+	}
+
+	.legal-links a:hover {
+		color: var(--color-slate-300);
+	}
+
+	.copyright {
+		color: var(--color-slate-500);
+		font-size: 0.85rem;
+	}
+
+	.copyright p {
+		margin: 0;
+	}
+
+	.footer-social {
+		display: flex;
+		justify-content: center;
+	}
+
+	.social-links {
+		display: flex;
+		gap: var(--space-4);
+	}
+
+	.social-link {
+		width: 40px;
+		height: 40px;
+		background: var(--color-slate-800);
+		border: 1px solid var(--color-slate-700);
+		border-radius: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		transition: all 0.3s ease;
+	}
+
+	.social-link:hover {
+		background: var(--color-primary);
+		border-color: var(--color-primary);
+		transform: translateY(-2px);
+	}
+
+	.social-icon {
+		font-size: 1.1rem;
+	}
+
+	/* Responsive */
+	@media (min-width: 640px) {
+		.cta-buttons {
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.footer-main {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.footer-bottom {
+			grid-template-columns: 1fr auto;
+			align-items: center;
+		}
+
+		.footer-legal {
+			grid-template-columns: auto 1fr;
+			align-items: center;
+			gap: var(--space-6);
+		}
+
+		.legal-links {
+			justify-content: flex-start;
+		}
+
+		.footer-social {
+			justify-content: flex-end;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.footer-main {
+			grid-template-columns: 1fr 2fr 1fr;
+			gap: var(--space-12);
+		}
+	}
+</style>
