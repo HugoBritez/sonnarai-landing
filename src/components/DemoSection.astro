@@ -2,22 +2,23 @@
 // DemoSection.astro - Sección de demo y llamada a la acción con WhatsApp
 ---
 
-<section class="demo-section">
+<section id="demo" class="demo-section">
 	<div class="container">
 		<div class="section-header">
 			<div class="section-badge">
-				<span>Prueba gratuita</span>
+				<span>Probalo gratis</span>
 			</div>
 			<h2 class="section-title">
-				Ve tu agente SONAR en
-				<span class="title-highlight">acción ahora mismo</span>
+				Hablemos de tu caso
+				<span class="title-highlight">específico</span>
 			</h2>
 			<p class="section-subtitle">
-				Chatea con nuestro agente demo y descubre el poder de tener empleados que nunca duermen
+				Cada empresa es diferente. Agendemos una llamada para ver si podemos ayudarte.
 			</p>
 		</div>
 
 		<div class="demo-content">
+			<!-- Chat WhatsApp Extendido -->
 			<div class="demo-phone">
 				<div class="phone-frame">
 					<div class="phone-screen">
@@ -27,7 +28,7 @@
 									<div class="avatar-bg">S</div>
 								</div>
 								<div class="contact-details">
-									<div class="contact-name">SONAR Demo</div>
+									<div class="contact-name">Agente SONAR</div>
 									<div class="contact-status">en línea</div>
 								</div>
 							</div>
@@ -36,25 +37,102 @@
 						<div class="chat-messages">
 							<div class="message received">
 								<div class="message-bubble">
-									<p>¡Hola! Soy tu agente SONAR</p>
-									<p>Estoy aquí 24/7 para ayudar a tu empresa. ¿En qué te puedo ayudar hoy?</p>
-									<div class="message-time">14:32</div>
+									<p>¡Hola! Soy tu agente virtual 👋</p>
+									<p>Estoy disponible 24/7. ¿En qué te puedo ayudar?</p>
+									<div class="message-time">09:15</div>
 								</div>
 							</div>
 
 							<div class="message sent">
 								<div class="message-bubble">
-									<p>Quiero información sobre sus servicios</p>
-									<div class="message-time">14:33</div>
+									<p>Hola! Quiero saber precios de sus productos</p>
+									<div class="message-time">09:16</div>
 								</div>
 							</div>
 
 							<div class="message received">
 								<div class="message-bubble">
-									<p>Perfecto, te ayudo con eso inmediatamente.</p>
-									<p>Ofrecemos agentes especializados en ventas, atención al cliente y automatización de procesos.</p>
-									<p>¿Cuál es tu área de interés principal?</p>
-									<div class="message-time">14:33</div>
+									<p>¡Perfecto! Te comparto nuestro catálogo actualizado:</p>
+									<p>📦 Producto A - $150<br>📦 Producto B - $280<br>📦 Producto C - $420</p>
+									<p>¿Te interesa alguno en particular?</p>
+									<div class="message-time">09:16</div>
+								</div>
+							</div>
+
+							<div class="message sent">
+								<div class="message-bubble">
+									<p>El producto B, tienen stock?</p>
+									<div class="message-time">09:17</div>
+								</div>
+							</div>
+
+							<div class="message received">
+								<div class="message-bubble">
+									<p>Sí, tenemos 15 unidades disponibles ✅</p>
+									<p>Entrega en 24-48hs en CABA y GBA. ¿Querés que te reserve una unidad?</p>
+									<div class="message-time">09:17</div>
+								</div>
+							</div>
+
+							<div class="message sent">
+								<div class="message-bubble">
+									<p>Dale, reservame una por favor</p>
+									<div class="message-time">09:18</div>
+								</div>
+							</div>
+
+							<div class="message received">
+								<div class="message-bubble">
+									<p>¡Listo! Ya te reservé 1 unidad del Producto B ✓</p>
+									<p>La reserva está a tu nombre y es válida por 48hs.</p>
+									<p>Para confirmar necesito algunos datos. ¿Cuál es tu nombre completo?</p>
+									<div class="message-time">09:18</div>
+								</div>
+							</div>
+
+							<div class="message sent">
+								<div class="message-bubble">
+									<p>Juan Pérez</p>
+									<div class="message-time">09:19</div>
+								</div>
+							</div>
+
+							<div class="message received">
+								<div class="message-bubble">
+									<p>Perfecto Juan! Y tu email?</p>
+									<div class="message-time">09:19</div>
+								</div>
+							</div>
+
+							<div class="message sent">
+								<div class="message-bubble">
+									<p>juan.perez@email.com</p>
+									<div class="message-time">09:20</div>
+								</div>
+							</div>
+
+							<div class="message received">
+								<div class="message-bubble">
+									<p>Excelente! Te envié un email con:</p>
+									<p>✓ Detalle de tu reserva<br>✓ Métodos de pago<br>✓ Opciones de envío</p>
+									<p>Podés confirmar desde el link del email o seguir acá por WhatsApp. ¿Cómo preferís continuar?</p>
+									<div class="message-time">09:20</div>
+								</div>
+							</div>
+
+							<div class="message sent">
+								<div class="message-bubble">
+									<p>Prefiero seguir por acá, que métodos de pago tienen?</p>
+									<div class="message-time">09:21</div>
+								</div>
+							</div>
+
+							<div class="message received">
+								<div class="message-bubble">
+									<p>Aceptamos:</p>
+									<p>💳 Tarjeta de crédito (hasta 12 cuotas)<br>💵 Transferencia bancaria (10% descuento)<br>📱 Mercado Pago</p>
+									<p>El total con envío es $320. ¿Cómo te gustaría pagar?</p>
+									<div class="message-time">09:21</div>
 								</div>
 							</div>
 
@@ -64,7 +142,7 @@
 									<span></span>
 									<span></span>
 								</div>
-								<span class="typing-text">SONAR está escribiendo...</span>
+								<span class="typing-text">Juan está escribiendo...</span>
 							</div>
 						</div>
 					</div>
@@ -72,36 +150,53 @@
 			</div>
 
 			<div class="demo-features">
+				<h3 class="features-title">Lo que podemos hacer por vos</h3>
 				<div class="feature-list">
 					<div class="feature-item">
-						<div class="feature-icon"></div>
+						<span class="feature-badge">Agente IA</span>
 						<div class="feature-content">
-							<h4>Respuesta instantánea</h4>
-							<p>Sin esperas, sin demoras. Respuesta inmediata las 24 horas.</p>
+							<h4>Atención al cliente 24/7</h4>
+							<p>Responde consultas en WhatsApp, web y redes sociales sin parar</p>
 						</div>
 					</div>
 
 					<div class="feature-item">
-						<div class="feature-icon"></div>
+						<span class="feature-badge">Agente IA</span>
 						<div class="feature-content">
-							<h4>Conoce tu negocio</h4>
-							<p>Entrenado específicamente con la información de tu empresa.</p>
+							<h4>Calificación de leads</h4>
+							<p>Filtra y clasifica prospectos automáticamente antes de contactarlos</p>
 						</div>
 					</div>
 
 					<div class="feature-item">
-						<div class="feature-icon"></div>
+						<span class="feature-badge">Automatización</span>
 						<div class="feature-content">
-							<h4>Mejora continuamente</h4>
-							<p>Aprende de cada conversación para ser más efectivo.</p>
+							<h4>Recordatorios y seguimientos</h4>
+							<p>Envía mensajes programados a clientes sin intervención manual</p>
 						</div>
 					</div>
 
 					<div class="feature-item">
-						<div class="feature-icon"></div>
+						<span class="feature-badge">Integración</span>
 						<div class="feature-content">
-							<h4>Reportes detallados</h4>
-							<p>Métricas completas de rendimiento y conversaciones.</p>
+							<h4>Conecta tus sistemas</h4>
+							<p>CRM, WhatsApp Business, hojas de cálculo y más en un solo lugar</p>
+						</div>
+					</div>
+
+					<div class="feature-item">
+						<span class="feature-badge">Automatización</span>
+						<div class="feature-content">
+							<h4>Extracción de datos</h4>
+							<p>Captura información de PDFs, emails y documentos automáticamente</p>
+						</div>
+					</div>
+
+					<div class="feature-item">
+						<span class="feature-badge">Agente IA</span>
+						<div class="feature-content">
+							<h4>Reportes personalizados</h4>
+							<p>Genera informes automáticos de ventas, métricas y rendimiento</p>
 						</div>
 					</div>
 				</div>
@@ -111,33 +206,34 @@
 		<div class="cta-section">
 			<div class="cta-card">
 				<div class="cta-content">
-					<h3 class="cta-title">¿Listo para tu ejército?</h3>
+					<h3 class="cta-title">¿Te interesa?</h3>
 					<p class="cta-description">
-						Comienza con una consulta gratuita. Te mostramos exactamente cómo SONAR
-						puede transformar tu empresa en 30 días.
+						Charlemos por WhatsApp o agendemos una videollamada.
+						Te muestro cómo funcionan los agentes y vemos si tiene sentido para tu negocio.
 					</p>
 					<div class="cta-benefits">
-						<div class="benefit-check">✓ Consultoría gratuita de 30 minutos</div>
-						<div class="benefit-check">✓ Análisis personalizado de tu empresa</div>
-						<div class="benefit-check">✓ Demo en vivo con tus datos reales</div>
-						<div class="benefit-check">✓ Plan de implementación detallado</div>
+						<div class="benefit-check">✓ Sin compromiso ni presión de venta</div>
+						<div class="benefit-check">✓ Hablamos de tu caso específico</div>
+						<div class="benefit-check">✓ Te muestro ejemplos reales funcionando</div>
+						<div class="benefit-check">✓ Si no te sirve, no hay problema</div>
 					</div>
 					<div class="cta-buttons">
-						<a href="https://wa.me/595981234567?text=Hola,%20quiero%20información%20sobre%20agentes%20SONAR%20para%20mi%20empresa"
+						<a href="https://wa.me/595982373124?text=Hola!%20Vi%20la%20web%20de%20SonarAI%20y%20me%20interesa%20saber%20más%20sobre%20los%20agentes%20y%20automatizaciones"
 						   class="cta-button primary-cta"
-						   target="_blank">
-							<span class="button-icon"></span>
-							<span>Hablar por WhatsApp</span>
+						   target="_blank"
+						   rel="noopener noreferrer">
+							<span class="button-icon">💬</span>
+							<span>Escribime por WhatsApp</span>
 						</a>
-						<a href="mailto:contacto@sonarai.com?subject=Consulta%20sobre%20agentes%20SONAR"
+						<a href="mailto:contacto@sonarai.com?subject=Consulta%20desde%20la%20web&body=Hola!%20Me%20interesa%20conocer%20más%20sobre%20SonarAI."
 						   class="cta-button secondary-cta">
-							<span class="button-icon"></span>
-							<span>Enviar email</span>
+							<span class="button-icon">✉️</span>
+							<span>Mandame un email</span>
 						</a>
 					</div>
 					<div class="cta-guarantee">
 						<span class="guarantee-icon"></span>
-						<span>Sin compromiso • Consulta 100% gratuita</span>
+						<span>Respondo personalmente todas las consultas</span>
 					</div>
 				</div>
 			</div>
@@ -213,9 +309,16 @@
 		grid-template-columns: 1fr;
 		gap: var(--space-8);
 		margin-bottom: var(--space-16);
-		max-width: 1000px;
+		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	@media (min-width: 1024px) {
+		.demo-content {
+			grid-template-columns: 380px 1fr;
+			align-items: start;
+		}
 	}
 
 	/* Phone Demo */
@@ -226,8 +329,8 @@
 	}
 
 	.phone-frame {
-		width: 280px;
-		height: 500px;
+		width: 320px;
+		height: 650px;
 		background: #000;
 		border-radius: 25px;
 		padding: 8px;
@@ -404,60 +507,86 @@
 	}
 
 	/* Feature List */
+	.features-title {
+		font-size: 1.5rem;
+		font-weight: 600;
+		color: var(--color-text-primary);
+		margin-bottom: var(--space-6);
+		text-align: center;
+	}
+
 	.feature-list {
 		display: grid;
-		gap: var(--space-4);
+		gap: var(--space-3);
+		grid-template-columns: 1fr;
+	}
+
+	@media (min-width: 640px) {
+		.feature-list {
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	.feature-item {
-		display: flex;
-		align-items: flex-start;
-		gap: var(--space-4);
 		background: var(--color-white);
-		padding: var(--space-5);
+		padding: var(--space-6);
 		border-radius: 12px;
-		border: 1px solid var(--color-border);
-		transition: all 0.3s ease;
+		border: 2px solid var(--color-border);
+		transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+		position: relative;
+		overflow: hidden;
+	}
+
+	.feature-item::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 3px;
+		background: linear-gradient(90deg, var(--color-primary), #0ea5e9);
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.feature-item:hover::before {
+		transform: scaleX(1);
 	}
 
 	.feature-item:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+		transform: translateY(-4px);
+		box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+		border-color: rgba(2, 132, 199, 0.3);
 	}
 
-	.feature-icon {
-		font-size: 1.5rem;
-		flex-shrink: 0;
-		width: 48px;
-		height: 48px;
-		background: var(--color-primary);
-		border-radius: 12px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: relative;
-	}
-
-	.feature-icon::before {
-		content: '';
-		width: 20px;
-		height: 20px;
-		background: white;
-		border-radius: 2px;
+	.feature-badge {
+		display: inline-flex;
+		padding: var(--space-1) var(--space-3);
+		background: rgba(2, 132, 199, 0.1);
+		color: var(--color-primary);
+		border-radius: 6px;
+		font-size: 0.7rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: var(--space-3);
 	}
 
 	.feature-content h4 {
-		font-size: 1rem;
+		font-size: 1.05rem;
 		font-weight: 600;
 		color: var(--color-text-primary);
 		margin: 0 0 var(--space-2) 0;
+		line-height: 1.4;
 	}
 
 	.feature-content p {
 		font-size: 0.9rem;
 		color: var(--color-text-secondary);
 		margin: 0;
-		line-height: 1.5;
+		line-height: 1.6;
 	}
 
 	/* CTA Section */
@@ -469,14 +598,20 @@
 	.cta-card {
 		background: var(--color-white);
 		border-radius: 16px;
-		padding: var(--space-8);
-		border: 1px solid var(--color-border);
-		max-width: 600px;
+		padding: var(--space-10);
+		border: 2px solid var(--color-border);
+		max-width: 650px;
 		width: 100%;
 		text-align: center;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 		position: relative;
 		overflow: hidden;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.cta-card:hover {
+		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+		border-color: rgba(2, 132, 199, 0.3);
 	}
 
 	.cta-card::before {
@@ -485,8 +620,8 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 3px;
-		background: var(--color-primary);
+		height: 4px;
+		background: linear-gradient(90deg, var(--color-primary), #0ea5e9);
 	}
 
 	.cta-title {
@@ -588,11 +723,6 @@
 
 		.section-subtitle {
 			font-size: 1.125rem;
-		}
-
-		.demo-content {
-			grid-template-columns: 1fr 1fr;
-			align-items: center;
 		}
 
 		.cta-buttons {
