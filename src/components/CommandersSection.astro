@@ -595,8 +595,8 @@
 <script>
 	// Tab filtering functionality with smooth animations
 	document.addEventListener('DOMContentLoaded', () => {
-		const tabs = document.querySelectorAll('.tab-button');
-		const cards = document.querySelectorAll('.solution-card');
+		const tabs = document.querySelectorAll<HTMLElement>('.tab-button');
+		const cards = document.querySelectorAll<HTMLElement>('.solution-card');
 
 		tabs.forEach(tab => {
 			tab.addEventListener('click', () => {
